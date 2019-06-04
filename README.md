@@ -6,7 +6,8 @@ you can edit source code based on your requirment please look at speedometerview
  width=225 height=400>
  
 **note:** use only square view
-***how it work***
+
+### how to use
 ```xml
  <com.example.speedometer.SpeedoMeterView
         android:layout_width="300dp"
