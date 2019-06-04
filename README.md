@@ -22,7 +22,7 @@ you can edit source code based on your requirment please look at speedometerview
 ### how to increase speed
 ```java
       SpeedoMeterView speedoMeterView=findViewById(R.id.speedometerview);
-      speedoMeterView.setSpeed(seekBar.getProgress(),true);
+      speedoMeterView.setSpeed(60,true);
 ```
  
  
