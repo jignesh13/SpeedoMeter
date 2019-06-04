@@ -19,6 +19,11 @@ you can edit source code based on your requirment please look at speedometerview
         app:layout_constraintTop_toTopOf="parent" />
 
 ```
+
+```java
+      SpeedoMeterView speedoMeterView=findViewById(R.id.speedometerview);
+        speedoMeterView.setSpeed(seekBar.getProgress(),true);
+```
  
  
 ##  Developer
