@@ -5,6 +5,19 @@ you can edit source code based on your requirment please look at speedometerview
 <image src=https://user-images.githubusercontent.com/20221469/58752086-58d11800-84c6-11e9-991c-f0b2bedee899.gif
  width=225 height=400>
  
+```xml
+ <com.example.speedometer.SpeedoMeterView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/speedometerview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+```
+ 
+ 
 ##  Developer
   jignesh khunt
   (jigneshkhunt13@gmail.com)
