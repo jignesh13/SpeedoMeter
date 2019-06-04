@@ -19,7 +19,7 @@ you can edit source code based on your requirment please look at speedometerview
         app:layout_constraintTop_toTopOf="parent" />
 
 ```
-***increase speed***
+### how to increase speed
 ```java
       SpeedoMeterView speedoMeterView=findViewById(R.id.speedometerview);
       speedoMeterView.setSpeed(seekBar.getProgress(),true);
