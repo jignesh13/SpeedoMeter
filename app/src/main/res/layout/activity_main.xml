@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.speedometer.SpeedoMeterView
+    <com.jignesh13.speedometer.SpeedoMeterView
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:id="@+id/speedometerview"

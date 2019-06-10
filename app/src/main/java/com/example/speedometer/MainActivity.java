@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.SeekBar;
 
+import com.jignesh13.speedometer.SpeedoMeterView;
+
 public class MainActivity extends AppCompatActivity {
 
     private SpeedoMeterView speedoMeterView;

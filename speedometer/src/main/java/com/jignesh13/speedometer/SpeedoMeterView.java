@@ -1,4 +1,4 @@
-package com.example.speedometer;
+package com.jignesh13.speedometer;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
