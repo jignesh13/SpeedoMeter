@@ -2,27 +2,38 @@
 
 you can edit source code based on your requirment please look at speedometerview.java it easy to customize needle,guage and all other stuff
 
-<image src=https://user-images.githubusercontent.com/20221469/58752086-58d11800-84c6-11e9-991c-f0b2bedee899.gif
+<image src=/speedo.gif
  width=225 height=400>
  
 **note:** use only square view
 
 ### how to use
 ```xml
- <com.example.speedometer.SpeedoMeterView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+ <com.jignesh13.speedometer.SpeedoMeterView
         android:id="@+id/speedometerview"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:backimage="@android:color/black"
+        app:needlecolor="#fff"
+        app:removeborder="false"
+        app:linecolor="#fff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
 
 ```
-### how to increase speed
+
 ```java
       SpeedoMeterView speedoMeterView=findViewById(R.id.speedometerview);
       speedoMeterView.setSpeed(60,true);//speed set 0 to 140
+      speedoMeterView.setisborder(!speedoMeterView.isborder());//add or remove border
+      speedoMeterView.setLinecolor(Color.WHITE);//set line and textcolor
+      speedoMeterView.setNeedlecolor(Color.WHITE);//set speed needle color
+      speedoMeterView.setbackImageResource(R.color.colorAccent);//you set image resource or color resource
+      
 ```
  
  
