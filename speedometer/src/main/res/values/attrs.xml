@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyCustomView">
+        <attr name="needlecolor" format="color"/>
+        <attr name="linecolor" format="color"/>
+        <attr name="backimage" format="reference|color"/>
+        <attr name="removeborder" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>
