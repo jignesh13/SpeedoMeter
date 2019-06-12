@@ -1,5 +1,28 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.9.1'
+    }
+}
+publish {
+
+    def groupProjectID = 'com.jignesh13.speedometer'
+    def artifactProjectID = 'speedview'
+    def publishVersionID = '1.0.0'
+
+    userOrg = 'jignesh13'
+    repoName = 'speedometer'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'android speedometer custom'
+    website = 'https://github.com/jignesh13/SpeedoMeter'
+}
 android {
     compileSdkVersion 28
 
