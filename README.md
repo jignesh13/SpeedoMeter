@@ -20,7 +20,7 @@ buildscript {
 
 // app/build.gradle
 dependencies {
-    compile 'com.clock.clockviewlib:clockviewlibrary:1.0.0'
+    implementation 'com.jignesh13.speedometer:speedometer:1.0.0'
 }
 ```
 **note:** use only square view
