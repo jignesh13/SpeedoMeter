@@ -5,6 +5,24 @@ you can edit source code based on your requirment please look at speedometerview
 <image src=/speedo.gif
  width=225 height=400>
  
+ ## Installation
+
+This is published on `jcenter` and you can use clockview as:
+
+```groovy
+// build.gradle
+buildscript {
+    repositories {
+        jcenter()
+    }
+    ...
+}
+
+// app/build.gradle
+dependencies {
+    compile 'com.clock.clockviewlib:clockviewlibrary:1.0.0'
+}
+```
 **note:** use only square view
 
 ### how to use
