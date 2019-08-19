@@ -1,5 +1,7 @@
 # SpeedoMeter
-create gauge view/speedometer for android 
+Create gauge view/speedometer for android app 
+
+This library provide customize every single components of gauge view
 
 you can edit source code based on your requirment please look at speedometerview.java it easy to customize needle,guage and all other stuff
 
