@@ -1,28 +1,34 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
+apply plugin: 'com.jfrog.bintray' // must be applied after your artifact generating plugin (eg. java / com.android.library)
+apply plugin: 'com.github.dcendents.android-maven'
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.novoda:bintray-release:0.9.1'
-    }
+
+ext {
+    bintrayRepo = 'speedometer'
+    bintrayName = 'com.jignesh13.speedometer'
+    libraryName = 'speedometer'
+
+
+    publishedGroupId = 'com.jignesh13.speedometer'
+    artifact = 'speedometer'
+    libraryVersion = '1.0.0'
+
+
+    libraryDescription = 'it is speedometer'
+
+    siteUrl = 'https://github.com/jignesh13/SpeedoMeter'
+    gitUrl = 'https://github.com/jignesh13/SpeedoMeter.git'
+
+
+    developerId = 'jignesh13'
+    developerName = 'jignesh khunt'
+    developerEmail = 'jigneshkhunt13@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
 }
-publish {
 
-    def groupProjectID = 'com.jignesh13.speedometer'
-    def artifactProjectID = 'speedview'
-    def publishVersionID = '1.0.0'
-
-    userOrg = 'jignesh13'
-    repoName = 'speedometer'
-    groupId = groupProjectID
-    artifactId = artifactProjectID
-    publishVersion = publishVersionID
-    desc = 'android speedometer custom'
-    website = 'https://github.com/jignesh13/SpeedoMeter'
-}
 android {
     compileSdkVersion 28
 
@@ -54,4 +60,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+if (project.rootProject.file('local.properties').exists())
+{
+
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
 }
