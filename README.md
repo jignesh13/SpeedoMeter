@@ -1,5 +1,6 @@
-# SpeedoMeter
-Create gauge view/speedometer for android app 
+# GaugeView (Speedometer) Android Project
+
+This repository contains an Android project that showcases a custom view called "GaugeView" or "Speedometer". The GaugeView is a visually appealing and interactive view that resembles a speedometer, providing a visual representation of a value within a specified range.
 
 This library provide customize every single components of gauge view
 
@@ -7,7 +8,17 @@ you can edit source code based on your requirment please look at speedometerview
 
 <image src=/speedo.gif
  width=225 height=400>
- 
+
+ ## Features
+
+- Customizable range and value limits for the gauge.
+- Real-time updating of the gauge needle to reflect the current value.
+- Customizable appearance, including colors, labels, and tick marks.
+- Support for different gauge types, such as circular or semi-circular.
+- Smooth animation of the needle movement for a polished user experience.
+- Integration with sensor data or custom data sources to simulate real-time readings.
+- User-friendly UI with intuitive interactions and visual feedback.
+
  ## Installation
 
 This is published on `jcenter` and you can use clockview as:
@@ -56,7 +67,12 @@ dependencies {
       speedoMeterView.setbackImageResource(R.color.colorAccent);//you set image resource or color resource
       
 ```
- 
+ ## Usage
+
+- Customize the appearance of the GaugeView by modifying colors, labels, and tick marks to match your design requirements.
+- Integrate the GaugeView into your own Android projects to provide a visually appealing and interactive speedometer-like visualization.
+- Utilize the value range and limits to represent various metrics or data readings, not limited to speed.
+
  
 ##  Developer
   jignesh khunt
